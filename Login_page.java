@@ -7,6 +7,7 @@ public class Login_page {
 
     public static void main(String[] args) {
         JFrame muraran = new JFrame(" Login Page??🎶 ");
+        JScrollBar scr = new JScrollBar();
 
         JLabel hg = new JLabel("Username ");
         JLabel yu = new JLabel("Pin ");
@@ -15,9 +16,12 @@ public class Login_page {
         JLabel eu = new JLabel("University");
         JLabel st = new JLabel("Maseno Estates");
         JLabel ge = new JLabel("Gender");
-        JPasswordField pk = new JPasswordField();
+        JTextArea pk = new JTextArea();
         JPasswordField gf = new JPasswordField();
-
+        JFileChooser ch = new JFileChooser();
+        JColorChooser col = new JColorChooser();
+        
+        
         String hostels[] = {"Nyabundi", "Elgon", "Kilinjaro", "Mbakali", "Luanda", "Nyawita", "Diaspora"
         };
         JComboBox ht = new JComboBox(hostels);
@@ -46,32 +50,36 @@ public class Login_page {
         JRadioButton tg = new JRadioButton("TransGender");
         
         
-        hg.setBounds(50, 10, 100, 30);
-        yu.setBounds(50, 50, 100, 30);
-        pk.setBounds(200, 10, 100, 30);
-        gf.setBounds(200, 50, 100, 30);
-        ho.setBounds(50, 150, 100, 30);
-        ht.setBounds(200, 150, 100, 30);
-        ct.setBounds(50, 250, 100, 30);
-        oo.setBounds(200, 250, 100, 80);
-        eu.setBounds(50, 400, 100, 30);
-        un.setBounds(200, 400, 170, 30);
-        st.setBounds(50, 500, 100, 30);
-        smk.setBounds(200, 500, 100, 30);
-        sml.setBounds(300, 500, 100, 30);
-        sll.setBounds(200, 530, 100, 30);
-        sii.setBounds(300, 530, 100, 30);
-        spp.setBounds(200, 560, 100, 30);
-        sng.setBounds(300, 560, 100, 30);
-        svt.setBounds(200, 590, 100, 30);
-        snl.setBounds(300, 590, 100, 30);
-        sri.setBounds(200, 620, 100, 30);
-        sny.setBounds(300, 620, 100, 30);
-        ge.setBounds(50, 670, 100, 30);
-        m.setBounds(200, 670, 100, 30);
-        f.setBounds(300, 670, 100, 30);
-        tg.setBounds(400, 670, 100, 30);
-
+        hg.setBounds(50, 318, 100, 30);
+        yu.setBounds(50, 350, 100, 30);
+        pk.setBounds(200, 318, 100, 20);
+        gf.setBounds(200, 350, 100, 30);
+        ho.setBounds(50, 450, 100, 30);
+        ht.setBounds(200, 450, 100, 30);
+        ct.setBounds(50, 550, 100, 30);
+        oo.setBounds(200, 550, 100, 80);
+        eu.setBounds(50, 700, 100, 30);
+        un.setBounds(200, 700, 170, 30);
+        st.setBounds(50, 800, 100, 30);
+        smk.setBounds(200, 800, 100, 30);
+        sml.setBounds(300, 800, 100, 30);
+        sll.setBounds(200, 830, 100, 30);
+        sii.setBounds(300, 830, 100, 30);
+        spp.setBounds(200, 860, 100, 30);
+        sng.setBounds(300, 860, 100, 30);
+        svt.setBounds(200, 890, 100, 30);
+        snl.setBounds(300, 890, 100, 30);
+        sri.setBounds(200, 920, 100, 30);
+        sny.setBounds(300, 920, 100, 30);
+        ge.setBounds(50, 970, 100, 30);
+        m.setBounds(200, 970, 100, 30);
+        f.setBounds(300, 970, 100, 30);
+        tg.setBounds(400, 970, 100, 30);
+        col.setBounds(400, 350, 500, 400);
+        ch.showDialog(ch, null);
+        scr.setSize(20,1500);
+        
+        
         muraran.add(hg);
         muraran.add(yu);
         muraran.add(pk);
@@ -97,14 +105,16 @@ public class Login_page {
         muraran.add(m);
         muraran.add(f);
         muraran.add(tg);
-        
-        muraran.setSize(700, 1000);
+        muraran.add(ch);
+        muraran.add(col);
+        muraran.add(scr);
+      
+        muraran.setSize(1000, 1500);
         muraran.setLayout(null);
         muraran.setVisible(true);
         muraran.setLocationRelativeTo(null);
-        muraran.setResizable(false);
+        muraran.setResizable(true);
         muraran.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+       
     }
-
 }
-        
